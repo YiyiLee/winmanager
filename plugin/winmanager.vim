@@ -1062,6 +1062,8 @@ function! <SID>ToggleWindowsManager()
 		call s:CloseWindowsManager()
 	else
 		call s:StartWindowsManager()
+    " close the extra window
+    exec 'q'
 	end
 endfunction
 
